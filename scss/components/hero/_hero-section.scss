@@ -1,0 +1,148 @@
+.hero {
+  width: 100%;
+  padding: 40px 16px;
+  border-bottom: 1px solid var(--dark-12);
+  @media (min-width: 1360px) {
+    padding: 60px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  @media (min-width: 1920px) {
+    width: 1600px;
+  }
+
+  &__text--left {
+    @media (min-width: 1360px) {
+      width: 436px;
+    }
+  }
+  @media (min-width: 1920px) {
+  }
+
+  &__text--small {
+    @extend %paragraph;
+    @media (min-width: 1360px) {
+      font-size: 18px;
+    }
+
+    @media (min-width: 1920px) {
+      font-size: 22px;
+    }
+  }
+
+  &__name {
+    @extend %title;
+    margin-bottom: 20px;
+    @media (min-width: 1360px) {
+      font-size: 60px;
+    }
+    @media (min-width: 1920px) {
+      font-size: 80px;
+      width: 582px;
+    }
+  }
+
+  &__text--right {
+    @media (min-width: 1360px) {
+      width: 400px;
+    }
+    @media (min-width: 1920px) {
+      width: 484px;
+    }
+  }
+
+  &__text--icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    @extend %sub-title;
+    margin-bottom: 5px;
+    @media (min-width: 1360px) {
+      font-size: 48px;
+    }
+    @media (min-width: 1920px) {
+      font-size: 58px;
+    }
+  }
+
+  &__text--icon > i {
+    display: flex;
+    padding: 14px 30px;
+    align-items: center;
+    gap: 10px;
+    background: #4a2ced;
+    border-radius: 100px;
+    box-shadow: 4px 4px 17.4px 0px rgba(255, 255, 255, 0.28) inset;
+  }
+
+  &__text--rightBot {
+    @extend %sub-title;
+    @media (min-width: 1360px) {
+      font-size: 48px;
+    }
+    @media (min-width: 1920px) {
+      font-size: 58px;
+    }
+  }
+
+  &__svg {
+    display: none;
+    @media (min-width: 1360px) {
+      display: block;
+      width: 262px;
+    }
+    @media (min-width: 1920px) {
+      width: 364px;
+    }
+  }
+}
+
+.info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--dark-12);
+  padding: 16px;
+  @media (min-width: 1920px) {
+    width: 1880px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  &__text {
+    @extend %paragraph;
+    font-size: 10px;
+    @media (min-width: 1360px) {
+      font-size: 16px;
+    }
+    @media (min-width: 1920px) {
+      font-size: 18px;
+    }
+  }
+
+  &__star {
+    width: 26px;
+  }
+}
+
+.images__container {
+  width: 100%;
+  padding: 14px;
+}
+
+.images__container > img {
+  width: 100%;
+  margin-bottom: 80px;
+  @media (min-width: 1360px) {
+    margin-bottom: 150px;
+    width: 1440px;
+  }
+  @media (min-width: 1920px) {
+    width: 1920px;
+  }
+}

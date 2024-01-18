@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photographer Portfolio</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav container">
+        <div class="nav__logo">
+          <img src="./assets/images/nav-logo.png" alt="logo" />
+        </div>
+        <ul class="nav__list">
+          <li class="nav__link nav__link--active">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="nav__link"><a href="#about">About me</a></li>
+          <li class="nav__link"><a href="#portfolio">Portfolio</a></li>
+          <li class="nav__link"><a href="#">Services</a></li>
+        </ul>
+        <button class="nav__button">Contact me</button>
+        <div class="nav__toggle-menu">
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="hero container">
+        <div class="hero__text--left">
+          <p class="hero__text--small">Stunning Photography by</p>
+          <h2 class="hero__name">Damien Braun</h2>
+        </div>
+        <img class="hero__svg" src="./assets/images/hero-svg.png" alt="" />
+        <div class="hero__text--right">
+          <div class="hero__text--icon">
+            <h2>Let's</h2>
+            <i class="bx bx-up-arrow-alt"></i>
+          </div>
+          <h2 class="hero__text--rightBot">Work Together</h2>
+        </div>
+      </section>
+
+      <div class="info">
+        <div class="info__item">
+          <img
+            src="./assets/images/purple-star-icon.png"
+            alt=""
+            class="info__star"
+          />
+          <p class="info__text">Wedding Photography</p>
+        </div>
+        <div class="info__item">
+          <img
+            src="./assets/images/purple-star-icon.png"
+            alt=""
+            class="info__star"
+          />
+          <p class="info__text">Landscape Photography</p>
+        </div>
+      </div>
+
+      <div class="images__container container">
+        <img
+          srcset="
+            ./assets/images/Container.png    1x,
+            ./assets/images/Container@2x.png 2x,
+            ./assets/images/Container@3x.png 3x
+          "
+          src="./assets/images/Container.png"
+          alt=""
+        />
+      </div>
+
+      <section class="about container" id="about">
+        <div class="about__title">
+          <div class="about__text">
+            <p class="about__text--small">About</p>
+            <h2 class="about__name">I am Damien</h2>
+          </div>
+          <button class="about__button">
+            Know more <i class="bx bx-right-arrow-alt"></i>
+          </button>
+        </div>
+        <div class="about__info">
+          <div class="about__info--left">
+            <img
+              srcset="
+                ./assets/images/hero.png    1x,
+                ./assets/images/hero@2x.png 2x,
+                ./assets/images/hero@3x.png 3x
+              "
+              src="./assets/images/hero.png"
+              width="620"
+              alt=""
+              class="about__image"
+            />
+          </div>
+          <div class="about__info--right">
+            <div class="introduction">
+              <div class="introduction__title">
+                <img
+                  class="introduction__star--small"
+                  src="./assets/images/purple-star-icon-2.png"
+                  alt="star"
+                />
+                <p class="introduction__text">Introduction</p>
+              </div>
+              <p class="introduction__description">
+                My journey as a photographer has been a lifelong quest to
+                capture the extraordinary in the ordinary, to freeze fleeting
+                moments in time, and to share the world's beauty as I see it.
+                Based in the enchanting landscapes of the USA, I find
+                inspiration in every corner of this diverse and vibrant country.
+                Join me as we embark on a visual odyssey, where each photograph
+                tells a story, and every frame is a piece of my heart.
+              </p>
+            </div>
+            <div class="contact">
+              <div class="contact__title">
+                <img
+                  class="contact__star--small"
+                  src="./assets/images/purple-star-icon-2.png"
+                  alt="star"
+                />
+                <p class="contact__text">Contact Information</p>
+              </div>
+              <div class="contact__description">
+                <div class="contact__item">
+                  <p class="contact__email">Email</p>
+                  <p class="contact__emailLink">damienbraun@gmail.com</p>
+                </div>
+                <div class="contact__item">
+                  <p class="contact__phone">Phone Number</p>
+                  <p class="contact__phoneNum">+00 000000000</p>
+                </div>
+              </div>
+              <div class="about__socials">
+                <div class="social">
+                  <img
+                    src="./assets/images/facebook.png"
+                    alt=""
+                    class="social__facebook"
+                  />
+                  <img
+                    src="./assets/images/twitter.png"
+                    alt=""
+                    class="social__twitter"
+                  />
+                  <img src="./assets/images/in.png" alt="" class="social__in" />
+                </div>
+                <div class="social__buttons">
+                  <button class="social__button">Let's Work</button>
+                  <button class="social__button">Download CV</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="services container" id="services">
+        <div class="services__wrapper">
+          <div class="services__text">
+            <p class="services__subtitle">Services</p>
+            <h2 class="services__title">MY PHOTOGRAPHY SERVICES</h2>
+          </div>
+          <button class="services__button">
+            View All Services <i class="bx bx-right-arrow-alt"></i>
+          </button>
+        </div>
+
+        <div class="events">
+          <img
+            srcset="
+              ./assets/images/Image.png    1x,
+              ./assets/images/Image@2x.png 2x,
+              ./assets/images/Image@3x.png 3x
+            "
+            src="./assets/images/Image.png"
+            alt="events"
+            class="events__image"
+            width="620"
+          />
+          <div class="events__text--left">
+            <div class="events__text">
+              <p class="events__title">Events</p>
+              <button class="events__button--purple">
+                <i class="bx bx-up-arrow-alt"></i>
+              </button>
+            </div>
+            <p class="events__description">
+              Our event photography service is dedicated to capturing the magic
+              of your special occasions. Whether it's a wedding, corporate
+              event, or milestone celebration, we're there to document every
+              heartfelt moment. We blend into the background, ensuring natural
+              and candid shots that reflect the emotions of the day.
+            </p>
+            <div class="highlight">
+              <p class="highlight__title">Service Highlight</p>
+              <ul class="highlight__lists">
+                <li class="list">
+                  <img
+                    src="./assets/images/purple-star-icon.png"
+                    alt=""
+                    class="list__icon"
+                  />
+                  <p class="list__text">
+                    Coverage for weddings, parties, corporate functions, and
+                    more.
+                  </p>
+                </li>
+                <li class="list">
+                  <img
+                    src="./assets/images/purple-star-icon.png"
+                    alt=""
+                    class="list__icon"
+                  />
+                  <p class="list__text">
+                    Skilled photographers who know how to seize the moment.
+                  </p>
+                </li>
+                <li class="list">
+                  <img
+                    src="./assets/images/purple-star-icon.png"
+                    alt=""
+                    class="list__icon"
+                  />
+                  <p class="list__text">
+                    A mix of candid and posed shots for a comprehensive story.
+                  </p>
+                </li>
+                <li class="list">
+                  <img
+                    src="./assets/images/purple-star-icon.png"
+                    alt=""
+                    class="list__icon"
+                  />
+                  <p class="list__text">
+                    Quick turnaround for you to relive the day's highlights.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="portfolio container" id="portfolio">
+        <div class="portfolio__wrapper">
+          <div class="portfolio__title">
+            <div class="portfolio__text">
+              <p class="portfolio__text--small">Portfolio</p>
+              <h2 class="portfolio__text--large">
+                Explore My photography work.
+              </h2>
+            </div>
+            <div class="portfolio__buttons">
+              <div class="button__arrows button__arrows--topHidden">
+                <i class="bx bx-chevron-left"></i>
+                <i class="bx bx-chevron-right"></i>
+              </div>
+              <button class="portfolio__button">
+                View All Works <i class="bx bx-right-arrow-alt"></i>
+              </button>
+            </div>
+          </div>
+          <ul class="portfolio__cards">
+            <li class="card">
+              <img
+                class="card__image"
+                srcset="
+                  ./assets/images/portfolio_1.png    1x,
+                  ./assets/images/portfolio_1@2x.png 2x,
+                  ./assets/images/portfolio_1@3x.png 3x
+                "
+                src="./assets/images/portfolio_1.png"
+                alt=""
+                width="358"
+              />
+              <div class="card__text">
+                <div class="card__text--left">
+                  <p class="card__name">Faces of Resilience</p>
+                  <p class="card__date">March 2022</p>
+                </div>
+                <div class="card__text--right">
+                  <p class="card__view">View Project</p>
+                  <i class="bx bx-up-arrow-alt"></i>
+                </div>
+              </div>
+            </li>
+            <li class="card card__hidden">
+              <img
+                class="card__image"
+                srcset="
+                  ./assets/images/portfolio_2.png    1x,
+                  ./assets/images/portfolio_2@2x.png 2x,
+                  ./assets/images/portfolio_2@3x.png 3x
+                "
+                src="./assets/images/portfolio_2.png"
+                alt=""
+                width="358"
+              />
+              <div class="card__text">
+                <div class="card__text--left">
+                  <p class="card__name">A Wedding Tale</p>
+                  <p class="card__date">January 2020</p>
+                </div>
+                <div class="card__text--right">
+                  <p class="card__view">View Project</p>
+                  <i class="bx bx-up-arrow-alt"></i>
+                </div>
+              </div>
+            </li>
+            <li class="card card__hidden">
+              <img
+                class="card__image"
+                srcset="
+                  ./assets/images/portfolio_3.png    1x,
+                  ./assets/images/portfolio_3@2x.png 2x,
+                  ./assets/images/portfolio_3@3x.png 3x
+                "
+                src="./assets/images/portfolio_3.png"
+                alt=""
+                width="358"
+              />
+              <div class="card__text">
+                <div class="card__text--left">
+                  <p class="card__name">Product Elegance</p>
+                  <p class="card__date">January 2020</p>
+                </div>
+                <div class="card__text--right">
+                  <p class="card__view">View Project</p>
+                  <i class="bx bx-up-arrow-alt"></i>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="button__arrows button__arrows--botHidden">
+            <i class="bx bx-chevron-left"></i>
+            <i class="bx bx-chevron-right"></i>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
